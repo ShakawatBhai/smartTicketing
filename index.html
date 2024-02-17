@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" >
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- linking DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon Link Here -->
+    <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon">
+</head>
+
+<body class="font-raleway">
+    <header class="w-4/5 mx-auto py-5">
+        <nav class="my-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-3xl font-extrabold hover:bg-white p-1">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium text-[18px]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="btn text-[var(--base)] bg-[#1DD1001A] border-[var(--base)] hover:bg-[var(--base) text-xl font-bold">Bus
+                        <img src="./images/bus-icon.png" alt="" /></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner-container bg-cover w-full bg-[url('./images/banner.png')] rounded-[32px] my-10 py-32 bg-center">
+            <div class="bg-gradient-to-b from-[#0000033] to-[#FFFFFF33] h-full rounded-[32px] flex justify-center items-center">
+                <div class="banner-content p-5 md:p-20 flex items-center justify-center flex-col w-full lg:w-4/5 text-center gap-4">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-8">End-to-End Travel with <br><span class="text-[var(--base)]">P Paribahan</span></h1>
+                    <p class="font-inter text-base md:text-[18px] text-white leading-8">
+                        Yes, you can run unit tests and view the results directly within
+                        the app. The integrated testing features allow for a streamlined .
+                    </p>
+                    <button class="btn bg-[var(--base)] text-xl font-bold text-black flex w-max h-max px-8 py-5 border-0">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-cards font-inter flex flex-col lg:flex-row gap-5 lg:gap-15 justify-center mt-0 lg:mt-[-110px]">
+            <div class="card flex flex-row w-full lg:w-max items-center gap-4 p-8 border-b-[3px] border-[var(--base)] bg-white">
+                <img src="./images/people.png" alt="" class="h-16 w-16">
+                <div>
+                    <h3 class="text-4xl font-bold">500K+</h3>
+                    <p class="text-[18px] text[#00000099]">Registered users</p>
+                </div>
+            </div>
+
+            <div class="card flex flex-row w-full lg:w-max items-center gap-4 p-8 border-b-[3px] border-[var(--base)] bg-white">
+                <img src="./images/ticket-cupon.png" alt="" class="h-16 w-16">
+                <div>
+                    <h3 class="text-4xl font-bold">1.7 lacks</h3>
+                    <p class="text-[18px] text[#00000099]">Tickets sold</p>
+                </div>
+            </div>
+
+            <div class="card flex flex-row w-full lg:w-max items-center gap-4 p-8 border-b-[3px] border-[var(--base)] bg-white">
+                <img src="./images/stoppage.png" alt="" class="h-16 w-16">
+                <div>
+                    <h3 class="text-4xl font-bold">80K+</h3>
+                    <p class="text-[18px] text[#00000099]">Rental partners</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-4/5 mx-auto py-5">
+        <section class="coupon-container">
+            <h1 class="text-4xl font-bold text-center text-black">Best offers for you</h1>
+            <div class="coupons flex flex-col lg:flex-row gap-10 justify-center my-10">
+                <div class="new15 bg-[#FFBF0F] border-white border-2 h-auto md:h-56 flex items-center rounded-3xl px-2 md:px-14 justify-around">
+                    <div class="left-section font-inter space-y-3">
+                        <h1 class="text-4xl font-black">15% OFF</h1>
+                        <p class="text-xl font-semibold text-[20px]">On your next purchase</p>
+                        <p class="font-medium">Use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="h-[264px] md:h-full">
+                    <div class="right-section font-raleway space-y-3">
+                        <h1 class="font-bold text-3xl">NEW15</h1>
+                        <p class="font-medium text-[20px]">Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="new15 bg-[#F78C9C] border-white border-2 h-auto md:h-56 flex items-center rounded-3xl px-2 md:px-14 justify-around">
+                    <div class="left-section font-inter space-y-3">
+                        <h1 class="text-4xl font-black">20% OFF
+                        </h1>
+                        <p class="text-xl font-semibold text-[20px]">On your next purchase</p>
+                        <p class="font-medium">Use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="" class="h-[264px] md:h-full">
+                    <div class="right-section font-raleway space-y-3">
+                        <h1 class="font-bold text-3xl">Couple 20
+                        </h1>
+                        <p class="font-medium text-[20px]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-max mx-auto">
+                <button class="btn text-[var(--base)] border-[var(--base)] w-max h-max px-8 py-5 font-bold">See All Offers</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- linking JS -->
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
